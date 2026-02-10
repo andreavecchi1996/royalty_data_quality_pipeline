@@ -27,5 +27,5 @@ An automated pipeline to standardise and validate royalty data:
 - Error Logging: Automatically separates and flags problematic rows for quick investigation.
 
 
-#Note: This project is currently in development.
+# Note: This project is currently in development.
 
