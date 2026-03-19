@@ -29,3 +29,20 @@ An automated pipeline to standardise and validate royalty data:
 
 # Note: This project is currently in development.
 
+## Tech Stack
+
+- Data Sources: Amazon, Apple, Deezer, Spotify, YouTube (CSV reports)
+- Data warehouse: Google BigQuery (schema design)
+- ETL: Python
+- Environment: Jupyter Notebook
+- Version control: Git & GitHub
+
+## Data Structure & Initial Checks
+
+
+## Executive Summary
+### Overview of Findings
+
+
+
+## The dataset
