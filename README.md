@@ -6,11 +6,11 @@ This project is a data pipeline designed to automate the ingestion, validation, 
 
 
 ### The Challenge
-Managing royalty data from multiple DSPs (Spotify, Apple, YouTube) is operationally complex:
+Managing royalty data from multiple DSPs (Spotify, Apple, YouTube, Amazon, Deezer) is operationally complex:
 
 - Inconsistent Formats: Every DSP uses different CSV schemas, column names, and currencies.
 
-- Data Errors: Raw reports often contain missing ISRCs, invalid country codes, or negative values that block payment systems.
+- Data Errors: Raw reports often contain missing ISRCs, Artist, Label, Track names,  invalid country codes, or negative values that block payment systems.
 
 - Manual Overload: Validating millions of rows by hand is slow and error-prone.
 
