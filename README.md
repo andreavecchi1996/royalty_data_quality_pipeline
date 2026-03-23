@@ -38,7 +38,7 @@ An automated pipeline to standardise and validate royalty data:
 - Version control: Git & GitHub
 
 ## Data Structure & Initial Checks
-<img width="558" height="367" alt="Image" src="https://github.com/user-attachments/assets/3230b53d-3d2b-4fe6-9e2e-19170cc30ff9" />
+<img width="680" height="436" alt="Image" src="https://github.com/user-attachments/assets/9148d270-329c-41f2-b9f2-6e380ac7c183" />
 
 ## Executive Summary
 ### Overview of Findings
