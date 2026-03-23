@@ -39,8 +39,8 @@ per-label distribution.
 | `album` | Album or release title |
 | `upc` | UPC/EAN for the release |
 | `country` | ISO country code of the sale |
-| `configuration` | Format/type (stream, download, etc.) |
-| `units` | Streams / plays / views |
+| `configuration` | Format/type (Free, Premium, etc.) |
+| `units` | number of Streams / plays / views |
 | `net_revenue_usd` | Revenue converted to USD |
 | `report_month` | Reporting period (monthly) |
 | `stream_rate_usd` | Revenue per unit |
