@@ -18,26 +18,32 @@ In the music industry, Rights Agencies like Merlin receive monthly royalty state
 2. **Data Cleaning:** Deduplication, type casting, null handling, DSP-specific transformations
 3. **Schema Standardisation:** Unified columns (`artist`, `label`, `isrc`, `net_revenue_usd`, etc.)
 4. **FX Normalisation:** **Historical rates** (Frankfurter API) → all revenue in USD
-5. **Production Exports:** Single **2.25M-row fact table** OR **30k per-label CSVs**
+5. **Production Exports:** Single **fact table**
 
 ### Fact Table Schema
 
-| Column | Description |
-|--------|-------------|
-| `artist` | Main artist |
-| `label` | Record label |
-| `track` | Track title |
-| `isrc` | ISRC identifier |
-| `country` | ISO country code |
-| `net_revenue_usd` | **Revenue (USD post-FX)** |
-| `stream_rate_usd` | Revenue per unit |
-| `units` | Streams/views |
-| `channel` | DSP source |
+| Column           | Type    | Description                            |
+| ---------------- | ------- | -------------------------------------- |
+| artist           | str     | Main performing artist                 |
+| label            | str     | Record label name                      |
+| track            | str     | Track title                            |
+| isrc             | str     | ISRC identifier                        |
+| album            | str     | Album/release title                    |
+| upc              | int64   | UPC/EAN release identifier             |
+| country          | str     | ISO country code                       |
+| configuration    | str     | Tier/format (Free, Premium, Unlimited) |
+| units            | int64   | Streams/plays/views                    |
+| sales_start_date | str     | Reporting period start                 |
+| sales_end_date   | str     | Reporting period end                   |
+| channel          | str     | DSP source                             |
+| net_revenue_usd  | float64 | Net revenue (USD post-FX)              |
+| stream_rate_usd  | float64 | Revenue per unit (USD)                 |
+| report_month     | str     | Monthly reporting period (YYYY-MM)     |
 
 ### Tech Stack
 
 - **Data Sources:** Amazon Music, Apple Music, Deezer, Spotify, **YouTube Content ID**
-- **ETL & Analysis:** Python/pandas (2.25M rows processing)
+- **ETL & Analysis:** Python/pandas
 - **FX API:** Frankfurter (historical rates)
 - **Environment:** Jupyter Notebook, VS Code
 - **Version Control:** Git/GitHub
@@ -46,6 +52,6 @@ In the music industry, Rights Agencies like Merlin receive monthly royalty state
 [`royalty_data_quality_pipeline.ipynb`](./notebooks/royalty_data_quality_pipeline.ipynb)
 
 ## Dataset Note
-**Synthetic dataset** simulating Merlin-scale royalty reports. Full fact table (~500MB) excluded from repo per GitHub limits; **sample available** in `data/`.
+**Synthetic dataset** simulating Merlin-scale royalty reports. Full fact table excluded from repo per GitHub limits; **sample available** in `data/`.
 
 
