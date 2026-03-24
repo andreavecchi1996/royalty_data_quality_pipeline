@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-In the music industry, Rights Agencies like Merlin receive monthly royalty statements from DSPs with inconsistent schemas, currencies, and metadata gaps. This pipeline ingests raw reports from 5 DSPs (Q1 2024 data), standardises them into a unified fact table with USD revenue, and prepares production-ready per-label exports.
+In the music industry, Royalty agencies receive monthly royalty statements from DSPs with inconsistent schemas, currencies, and metadata gaps. This pipeline ingests raw reports from 5 DSPs (Q1 2024 data), standardises them into a unified fact table with USD revenue, and prepares production-ready per-label exports.
 
 ### The Challenge
 
-- **Inconsistent Schemas:** Different CSV structures, column names, date formats across DSPs
+- **Inconsistent Schemas:** Different CSV structures, column names, and date formats across DSPs
 - **Multi-Currency Revenue:** USD, EUR, GBP, JPY requiring historical FX conversion
 - **Scale:** 15 reports to **2.25M rows**, **30k unique labels**
 
@@ -52,6 +52,9 @@ In the music industry, Rights Agencies like Merlin receive monthly royalty state
 [`royalty_data_quality_pipeline.ipynb`](./notebooks/royalty_data_quality_pipeline.ipynb)
 
 ## Dataset Note
-**Synthetic dataset** simulating Merlin-scale royalty reports. Full fact table excluded from repo per GitHub limits; **sample available** in `data/`.
+Synthetic dataset modelled after digital rights agency royalty workflows (Amazon Music, Spotify, YouTube, ...). Final dataset (royalties_fact_clean_2024_q1.csv) excluded per GitHub limits; DSPs CSV available in folder `inbound_reports`.
+
+# Note: Synthetic dataset for demonstration. Does not reflect real royalty data.
+
 
 
