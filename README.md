@@ -49,7 +49,7 @@ In the music industry, Royalty agencies receive monthly royalty statements from 
 - **Version Control:** Git/GitHub
 
 ## Notebook
-[`royalty_data_quality_pipeline.ipynb`](./notebooks/royalty_data_quality_pipeline.ipynb)
+[`royalty_data_quality_pipeline.ipynb`](./royalty_data_quality_pipeline.ipynb)
 
 ## Dataset Note
 Synthetic dataset modelled after digital rights agency royalty workflows (Amazon Music, Spotify, YouTube, ...). Final dataset (royalties_fact_clean_2024_q1.csv) excluded per GitHub limits; DSPs CSV available in folder `inbound_reports`.
